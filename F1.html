@@ -1,0 +1,36 @@
+
+<script>
+
+var greeting, color, number, fortune;
+alert("Do you want to know your fortune?");
+color = prompt("Pick a color: yellow, red, blue, or green."); 
+
+if (color.length % 2 == 0) {
+	number = prompt("Now, pick a number: 2, 4, 6, or 8.");
+		if (number == 2) {
+		  fortune = "There will be mountains to climb and rivers to cross in your future--metaphorically speaking. You will find what you are looking for so long as you continue searching."
+		} else if (number == 4) {
+		  fortune ="You will soon meet a fabulously interesting person. Get ready!"
+		} else if (number == 6) {
+			fortune = "You will be an A+ code fellows student!"
+		} else	{
+			fortune = "WoW, you're going to start an extremely successful business. May I just say, you have beatiful eyes. Allow me to introduce myself..."
+		};
+} else {
+	number = prompt("Now, pick a number: 1, 3, 5, 7.");
+	if (number == "1") {
+		 fortune = "You will have 3 children, one of which will grow up to be a Ninja!"
+	} else if (number == "3") {
+		 fortune = "Look out for a young child carrying numchucks in the city. She will remind you of an important life lesson."
+	}
+	else if(number == "5"){
+		 fortune = "Have you been wanting to loose weight, color your hair, or try more radical measures of transformation? Your will undergo an image overhaul in the next month."
+	} else {
+		fortune = "Do you have a sturdy suitcase? If not, best go out and purchase one ASAP. A distant corner of the world is waiting for you, and you will soon pay a visit. Travel safe!"
+	};
+	
+};
+
+
+alert(fortune); //output
+// </script>

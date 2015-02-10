@@ -1,0 +1,19 @@
+<script>  
+
+var student = function(n, a, d, t) {
+  this.name = n;
+  this.aptitude = a;
+  this.determination = d;
+  this.time = t;
+  this.gpa = this.aptitude*.2 + this.determination*.4 + this.time*.4;
+  this.report = function() {
+    return this.name + ":" + this.gpa;
+  };
+}
+
+var Charlie = new student("Charlie", 2, 3, 3.5),
+    Zoe = new student("Zoe", 4, 2, 2.5);
+  
+console.log(Charlie.report());
+console.log(Zoe.report());
+</script>
